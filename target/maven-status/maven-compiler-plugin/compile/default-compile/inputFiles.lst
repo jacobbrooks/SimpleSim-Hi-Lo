@@ -1,26 +1,26 @@
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/Main.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/Decision.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/Player.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/Trial.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/ResultsWindow.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/ProgressBarWindow.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/SimDataMapper.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/DeviationListWindow.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/ChartParser.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/RampBucket.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/DeviationRow.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/io/ResultsFileWriter.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/Card.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/EditingCell.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/DecisionSolver.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/MainWindow.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/Count.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/SimSettings.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/TrialStats.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/SimEngine.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/core/ResultsProcessor.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/InvalidInputWindow.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/BetRampWindow.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/GUIController.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/GUIWindow.java
-/home/jacob/dev/eclipse-workspace/simplesim/src/main/java/gui/AddDeviationWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/GUIWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/BetRampWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/InvalidInputWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/io/ResultsFileWriter.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/ResultsProcessor.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/SimDataMapper.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/MainWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/GUIController.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/DecisionSolver.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/ResultsWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/Count.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/Main.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/RampBucket.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/EditingCell.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/TrialStats.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/AddDeviationWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/ProgressBarWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/SimSettings.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/Card.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/Player.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/DeviationListWindow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/gui/DeviationRow.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/Decision.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/SimEngine.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/ChartParser.java
+/home/jacob/dev/eclipse-workspace/SimpleSim Hi-Lo/src/main/java/core/Trial.java

@@ -44,11 +44,11 @@ public class ResultsFileWriter {
 			for (int i = 0; i < settings.getBetRamp().length; i++) {
 				String tc = "";
 				if (i == 0) {
-					tc = "True Count ≤ ";
+					tc = "True Count <= ";
 				} else if (i < 6) {
 					tc = "True Count = ";
 				} else {
-					tc = "True Count ≥ ";
+					tc = "True Count >= ";
 				}
 				p.println("      " + tc + i + ": " + settings.getSpotsRamp()[i] + " x $" + settings.getBetRamp()[i]);
 			}

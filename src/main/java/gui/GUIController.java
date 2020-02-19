@@ -19,7 +19,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class GUIController extends Application {
-	
+
 	public static final int MAIN_WINDOW = 0;
 	public static final int BET_RAMP_WINDOW = 1;
 	public static final int DEVIATION_LIST_WINDOW = 2;
@@ -27,9 +27,9 @@ public class GUIController extends Application {
 	public static final int PROGRESS_BAR_WINDOW = 4;
 	public static final int RESULTS_WINDOW = 5;
 	public static final int INVALID_INPUT_WINDOW = 6;
-	
+
 	private SettingsBuilder settings;
-	
+
 	private SimDataMapper mapper;
 
 	private Task simWorker;
@@ -42,7 +42,7 @@ public class GUIController extends Application {
 	}
 
 	@Override
-	public void start(Stage primaryStage) throws Exception {		
+	public void start(Stage primaryStage) throws Exception {
 		settings = new SimSettings.SettingsBuilder();
 		engine = new SimEngine(settings);
 		mapper = new SimDataMapper();
@@ -83,7 +83,7 @@ public class GUIController extends Application {
 				while (engine.getPercentComplete() < 100 && !isCancelled()) {
 					updateProgress(engine.getPercentComplete(), 100);
 				}
-				if(!isCancelled()) {
+				if (!isCancelled()) {
 					updateProgress(engine.getPercentComplete(), 100);
 				}
 				t.join();
@@ -93,11 +93,11 @@ public class GUIController extends Application {
 	}
 
 	public void runSimulation() {
-		
+
 		String invalidInputMessage = "";
 
 		GUIWindow mainWindow = windows[MAIN_WINDOW];
-			
+
 		invalidInputMessage = mainWindow.invalidInputMessage();
 
 		if (!invalidInputMessage.isEmpty()) {
@@ -127,9 +127,9 @@ public class GUIController extends Application {
 		}
 
 	}
-	
+
 	public void cancelSimulation() {
-	    simWorker.cancel();
+		simWorker.cancel();
 		engine.stopEngine();
 	}
 
@@ -232,7 +232,7 @@ public class GUIController extends Application {
 	public void launchWindow(int windowID, boolean rebuild) {
 		windows[windowID].open(rebuild);
 	}
-	
+
 	public void closeWindow(int windowID) {
 		windows[windowID].close();
 	}
@@ -244,7 +244,7 @@ public class GUIController extends Application {
 	public SettingsBuilder getSettingsBuilder() {
 		return settings;
 	}
-	
+
 	public SimDataMapper getDataMapper() {
 		return mapper;
 	}
@@ -252,24 +252,24 @@ public class GUIController extends Application {
 	public void saveResults() {
 		Stage fileChooserStage = new Stage();
 		fileChooserStage.initModality(Modality.WINDOW_MODAL);
-		
-		SimpleDateFormat formatter= new SimpleDateFormat("MM-dd-yyyy_HHmmss");
+
+		SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy_HHmmss");
 		Date date = new Date(System.currentTimeMillis());
 		String today = formatter.format(date);
-		
+
 		String defaultFileName = "SimResults_" + today + ".txt";
-		
+
 		FileChooser fileChooser = new FileChooser();
-        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
-        fileChooser.setTitle("Save Results");
-        fileChooser.getExtensionFilters().add(extFilter);
+		FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
+		fileChooser.setTitle("Save Results");
+		fileChooser.getExtensionFilters().add(extFilter);
 		fileChooser.setInitialFileName(defaultFileName);
 
-        File file = fileChooser.showSaveDialog(fileChooserStage);
+		File file = fileChooser.showSaveDialog(fileChooserStage);
 
-        if (file != null) {
-        	engine.writeResultsToFile(file);
-        }
+		if (file != null) {
+			engine.writeResultsToFile(file);
+		}
 	}
 
 	public String getSimResultAt(int index) {
@@ -308,6 +308,5 @@ public class GUIController extends Application {
 		invalidWindow.setMessage(message);
 		invalidWindow.open(true);
 	}
-
 
 }

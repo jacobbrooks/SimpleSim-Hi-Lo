@@ -260,16 +260,16 @@ public class AddDeviationWindow extends GUIWindow {
 			message = "You cannot split a non-pair hand!";
 		}
 
-		if (comboBoxVal(belowIndex).isBlank()) {
+		if (comboBoxVal(belowIndex).equals(" ")) {
 			if (!comboBoxVal(handType).equals("insurance")
-					&& (comboBoxVal(aboveIndex).isBlank() || !comboBoxVal(aboveIndex).equals("surrender"))) {
+					&& (comboBoxVal(aboveIndex).equals(" ") || !comboBoxVal(aboveIndex).equals("surrender"))) {
 				message = "You must select a play below the index!";
 			}
 		}
 
-		if (comboBoxVal(aboveIndex).isBlank()) {
+		if (comboBoxVal(aboveIndex).equals(" ")) {
 			if (!comboBoxVal(handType).equals("insurance")
-					&& (comboBoxVal(belowIndex).isBlank() || !comboBoxVal(belowIndex).equals("surrender"))) {
+					&& (comboBoxVal(belowIndex).equals(" ") || !comboBoxVal(belowIndex).equals("surrender"))) {
 				message = "You must select a play above the index!";
 			}
 		}
@@ -278,19 +278,19 @@ public class AddDeviationWindow extends GUIWindow {
 			message = "You must enter a valid index number!";
 		}
 
-		if (comboBoxVal(upCard).isBlank()) {
+		if (comboBoxVal(upCard).equals(" ")) {
 			if (!comboBoxVal(handType).equals("insurance")) {
 				message = "You must select the dealer's up-card!";
 			}
 		}
 
-		if (comboBoxVal(handTotal).isBlank()) {
+		if (comboBoxVal(handTotal).equals(" ")) {
 			if (!comboBoxVal(handType).equals("insurance")) {
 				message = "You must select the player's hand!";
 			}
 		}
 
-		if (comboBoxVal(handType).isBlank()) {
+		if (comboBoxVal(handType).equals(" ")) {
 			message = "You must select a hand type!";
 		}
 		

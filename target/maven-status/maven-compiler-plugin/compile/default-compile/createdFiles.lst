@@ -24,6 +24,7 @@ gui/BetRampWindow.class
 gui/BetRampWindow$6.class
 gui/DeviationListWindow$2.class
 gui/DeviationRow.class
+core/SimSettings$1.class
 gui/BetRampWindow$9.class
 gui/GUIController.class
 gui/ProgressBarWindow.class

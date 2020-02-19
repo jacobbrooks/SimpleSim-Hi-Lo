@@ -27,7 +27,7 @@ public class DeviationListWindow extends GUIWindow {
 	protected Scene getScene() {
 		GridPane grid = new GridPane();
 		grid.setStyle("-fx-background-color: #3f5368;");
-		grid.setMinSize(600, 600);
+		grid.setMinSize(660, 600);
 		grid.setPadding(new Insets(10, 10, 10, 10));
 		grid.setVgap(5);
 		grid.setHgap(50);
@@ -57,6 +57,7 @@ public class DeviationListWindow extends GUIWindow {
 		}
 
 		ScrollPane scroll = new ScrollPane();
+		scroll.setStyle("-fx-background-color: #3f5368;");
 		scroll.setContent(grid);
 
 		HBox hBox = new HBox();
