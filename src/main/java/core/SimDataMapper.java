@@ -6,7 +6,7 @@ package core;
  * for various purposes
  */
 public class SimDataMapper {
-	
+
 	/*
 	 * returns the section coordinate of the decision table corresponding to the
 	 * player's hand type
@@ -67,13 +67,11 @@ public class SimDataMapper {
 	public int mapColumnToUpCard(int column) {
 		return column + 2;
 	}
-	
-    /*
-     * Converts full word player decisions
-     * the engine can understand to single 
-     * characters, which is the data format
-     * the chart parser uses/understands
-     */
+
+	/*
+	 * Converts full word player decisions the engine can understand to single
+	 * characters, which is the data format the chart parser uses/understands
+	 */
 	public String mapDecisionToChar(String decision) {
 		switch (decision) {
 		case "hit":
@@ -90,7 +88,7 @@ public class SimDataMapper {
 			return null;
 		}
 	}
-	
+
 	/*
 	 * Takes in single character basic strategy/deviation and converts it to a
 	 * decision String the player object can understand
