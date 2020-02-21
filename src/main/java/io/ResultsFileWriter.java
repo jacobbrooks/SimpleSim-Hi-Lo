@@ -46,7 +46,7 @@ public class ResultsFileWriter {
 				if (i == 0) {
 					tc = "True Count <= ";
 				} else if (i < 6) {
-					tc = "True Count = ";
+					tc = "True Count =  ";
 				} else {
 					tc = "True Count >= ";
 				}
