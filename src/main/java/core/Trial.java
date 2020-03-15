@@ -121,7 +121,7 @@ public class Trial implements Runnable {
 	 */
 	private boolean insuranceLogic(boolean playerBlackjack, boolean dealerBlackjack) {
 		if (dealer.getUpCard().getRank().equals("A")) { // offer insurance
-
+			
 			if (player.getDecision("insurance", null, 0).equals("take")) {
 				// player took insurance
 				player.makeInsuranceBet();

@@ -13,7 +13,11 @@ import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Paint;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.util.Callback;
 
 public class BetRampWindow extends GUIWindow {
@@ -180,12 +184,28 @@ public class BetRampWindow extends GUIWindow {
 			}
 
 		});
-
+		
+		Text messageText = new Text("Hit ENTER/RETURN to commit value to cell.");
+		messageText.setStyle("-fx-font: italic bold 12px 'sans-serif';");
+		messageText.setFill(Paint.valueOf("white"));
+		
+		HBox messageBar = new HBox();
+		messageBar.setStyle("-fx-background-color: #3f5368;");
+		messageBar.setAlignment(Pos.CENTER);
+		messageBar.setPadding(new Insets(2, 0, 2, 0));
+		messageBar.getChildren().addAll(messageText);	
+			
+		HBox buttonBar = new HBox();
+		buttonBar.setStyle("-fx-background-color: #3f5368;");
+		buttonBar.setAlignment(Pos.CENTER);
+		buttonBar.setPadding(new Insets(2, 0, 2, 0));
+		buttonBar.getChildren().addAll(done);
+		
 		VBox vBox = new VBox();
 		vBox.setStyle("-fx-background-color: #3f5368;");
 		vBox.setAlignment(Pos.CENTER);
 		vBox.setPadding(new Insets(0, 0, 2, 0));
-		vBox.getChildren().addAll(betRampTable, done);
+		vBox.getChildren().addAll(messageBar, betRampTable, buttonBar);
 		
 		return new Scene(vBox);
 	}
